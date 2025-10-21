@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "process": "Process",
+    "gallery": "Gallery",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getQuote": "Get Quote"
+  },
+  "hero": {
+    "title": "Professional Cleaning Services",
+    "subtitle": "We professionally clean your homes and offices",
+    "description": "High-quality cleaning services with over 10 years of experience. Modern equipment and eco-friendly products.",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "stats": {
+      "clients": "Clients",
+      "experience": "Years Experience",
+      "rating": "Rating",
+      "projects": "Projects"
+    }
+  },
+  "features": {
+    "title": "Why Choose Us?",
+    "subtitle": "We are the best choice for professional cleaning services",
+    "items": {
+      "professional": {
+        "title": "Professional Team",
+        "description": "Experienced and qualified staff"
+      },
+      "equipment": {
+        "title": "Modern Equipment",
+        "description": "Latest technology solutions"
+      },
+      "eco": {
+        "title": "Eco-Friendly",
+        "description": "Environmentally safe products"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "description": "Always at your service"
+      },
+      "guarantee": {
+        "title": "Quality Guarantee",
+        "description": "100% quality guarantee"
+      },
+      "price": {
+        "title": "Affordable Prices",
+        "description": "Best price-quality ratio"
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "All types of cleaning services",
+    "viewAll": "View All",
+    "items": {
+      "carpet": {
+        "title": "Carpet Cleaning",
+        "description": "Professional carpet cleaning service. Deep cleaning and stain removal."
+      },
+      "furniture": {
+        "title": "Furniture Cleaning",
+        "description": "Upholstery and sofa cleaning. With modern equipment."
+      },
+      "curtain": {
+        "title": "Curtain Washing",
+        "description": "Professional curtain washing and ironing service."
+      },
+      "mattress": {
+        "title": "Mattress Cleaning",
+        "description": "Deep cleaning of mattresses and bedding."
+      },
+      "home": {
+        "title": "Home Cleaning",
+        "description": "Complete home cleaning service. All rooms and surfaces."
+      },
+      "office": {
+        "title": "Office Cleaning",
+        "description": "Office and commercial building cleaning service."
+      },
+      "window": {
+        "title": "Window Washing",
+        "description": "Professional window washing and polishing."
+      },
+      "floor": {
+        "title": "Floor Cleaning",
+        "description": "Cleaning and polishing of all types of floors."
+      }
+    }
+  },
+  "process": {
+    "title": "How It Works?",
+    "subtitle": "Professional service in 4 simple steps",
+    "steps": {
+      "contact": {
+        "title": "Contact Us",
+        "description": "Contact us by phone or online"
+      },
+      "assessment": {
+        "title": "Assessment",
+        "description": "Our specialists inspect the site"
+      },
+      "cleaning": {
+        "title": "Cleaning",
+        "description": "Professional cleaning process"
+      },
+      "quality": {
+        "title": "Quality Control",
+        "description": "Checking and confirming results"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Our Work Gallery",
+    "subtitle": "See our professional work",
+    "before": "Before",
+    "after": "After"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to your questions",
+    "items": {
+      "q1": {
+        "question": "How much does the service cost?",
+        "answer": "The price depends on the area to be cleaned and the type of service. Contact us for an exact price and get a free consultation."
+      },
+      "q2": {
+        "question": "How long does it take?",
+        "answer": "Cleaning time depends on the type of service and area size. On average it takes 2-4 hours. For large projects, the exact time is agreed in advance."
+      },
+      "q3": {
+        "question": "Do you use eco-friendly products?",
+        "answer": "Yes, we only use eco-friendly and health-safe products. All our products meet international standards."
+      },
+      "q4": {
+        "question": "Do you provide a guarantee?",
+        "answer": "Absolutely! We provide a 100% quality guarantee for all our services. If the result doesn't satisfy you, we'll re-clean for free."
+      },
+      "q5": {
+        "question": "What payment methods are available?",
+        "answer": "You can pay by cash, bank card, or bank transfer. Payment is made after the cleaning work is completed."
+      },
+      "q6": {
+        "question": "Is express service available?",
+        "answer": "Yes, we can provide service within 24 hours for urgent cases. An additional fee is charged for express service."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions? Contact us!",
+    "form": {
+      "name": "Your Name",
+      "phone": "Your Phone Number",
+      "service": "Select Service Type",
+      "message": "Your Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred. Please try again."
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "workingHours": "Working Hours",
+      "hours": "Monday - Sunday: 8:00 AM - 8:00 PM"
+    }
+  },
+  "footer": {
+    "description": "Professional cleaning services. Serving in Tashkent with over 10 years of experience.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "contactInfo": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "location": "Tashkent, Yunusabad",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved.",
+    "telegram": "Telegram",
+    "call": "Call"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "getQuote": "Get Quote",
+    "bookNow": "Book Now",
+    "viewAll": "View All"
+  }
+}

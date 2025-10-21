@@ -5,17 +5,13 @@
         <!-- Left Content -->
         <div class="animate-slide-up">
           <span class="inline-block px-4 py-2 bg-accent-100 text-accent-600 rounded-full text-sm font-semibold mb-4">
-            Nega Bizni Tanlash Kerak?
+            {{ $t('features.title') }}
           </span>
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Sizning Ishonchli
-            <span class="block bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-              Tozalash Hamkoringiz
-            </span>
+            {{ $t('features.subtitle') }}
           </h2>
           <p class="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">
-            10 yildan ortiq tajriba bilan biz Toshkent shahrida eng yaxshi tozalash xizmatlarini taqdim etamiz. 
-            Mijozlarimizning qoniqishi bizning asosiy maqsadimiz.
+            {{ $t('hero.description') }}
           </p>
 
           <!-- Features List -->
@@ -34,8 +30,8 @@
                 <div v-html="feature.icon" class="w-6 h-6 text-white"></div>
               </div>
               <div>
-                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">{{ feature.title }}</h3>
-                <p class="text-sm md:text-base text-gray-600">{{ feature.description }}</p>
+                <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">{{ $t(feature.titleKey) }}</h3>
+                <p class="text-sm md:text-base text-gray-600">{{ $t(feature.descKey) }}</p>
               </div>
             </div>
           </div>
@@ -44,7 +40,7 @@
           <div class="mt-8">
             <button class="btn-primary">
               <span class="flex items-center space-x-2">
-                <span>Biz Bilan Bog'laning</span>
+                <span>{{ $t('common.contactUs') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
@@ -66,7 +62,7 @@
                 <div v-html="stat.icon" class="w-7 h-7 md:w-8 md:h-8 text-white"></div>
               </div>
               <div class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{{ stat.value }}</div>
-              <div class="text-sm md:text-base text-gray-600">{{ stat.label }}</div>
+              <div class="text-sm md:text-base text-gray-600">{{ $t(stat.labelKey) }}</div>
             </div>
           </div>
 
@@ -91,8 +87,8 @@
           >
             <div v-html="badge.icon" class="w-10 h-10 text-white"></div>
           </div>
-          <h4 class="text-sm md:text-base font-bold text-gray-900 mb-2">{{ badge.title }}</h4>
-          <p class="text-xs md:text-sm text-gray-600">{{ badge.description }}</p>
+          <h4 class="text-sm md:text-base font-bold text-gray-900 mb-2">{{ $t(badge.titleKey) }}</h4>
+          <p class="text-xs md:text-sm text-gray-600">{{ $t(badge.descKey) }}</p>
         </div>
       </div>
     </div>
@@ -102,26 +98,26 @@
 <script setup>
 const features = [
   {
-    title: 'Professional Jamoa',
-    description: 'Malakali va tajribali mutaxassislar jamoasi sizning xizmatizda',
+    titleKey: 'features.items.professional.title',
+    descKey: 'features.items.professional.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700'
   },
   {
-    title: 'Zamonaviy Uskunalar',
-    description: 'Eng so\'nggi texnologiyalar va professional jihozlar',
+    titleKey: 'features.items.equipment.title',
+    descKey: 'features.items.equipment.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700'
   },
   {
-    title: 'Ekologik Vositalar',
-    description: 'Sog\'liq uchun xavfsiz va tabiatga zarar bermaydigan mahsulotlar',
+    titleKey: 'features.items.eco.title',
+    descKey: 'features.items.eco.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
     color: 'bg-gradient-to-br from-green-500 to-green-700'
   },
   {
-    title: '100% Kafolat',
-    description: 'Agar natija sizni qoniqtirmasa, qayta tozalaymiz',
+    titleKey: 'features.items.guarantee.title',
+    descKey: 'features.items.guarantee.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>',
     color: 'bg-gradient-to-br from-orange-500 to-orange-700'
   }
@@ -130,25 +126,25 @@ const features = [
 const stats = [
   {
     value: '5000+',
-    label: 'Baxtli Mijozlar',
+    labelKey: 'hero.stats.clients',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700'
   },
   {
     value: '10+',
-    label: 'Yillik Tajriba',
+    labelKey: 'hero.stats.experience',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700'
   },
   {
     value: '50+',
-    label: 'Mutaxassislar',
+    labelKey: 'hero.stats.projects',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>',
     color: 'bg-gradient-to-br from-green-500 to-green-700'
   },
   {
     value: '24/7',
-    label: 'Qo\'llab-quvvatlash',
+    labelKey: 'features.items.support.title',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>',
     color: 'bg-gradient-to-br from-orange-500 to-orange-700'
   }
@@ -156,26 +152,26 @@ const stats = [
 
 const badges = [
   {
-    title: 'Tez Xizmat',
-    description: '24 soat ichida',
+    titleKey: 'features.items.support.title',
+    descKey: 'features.items.support.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>',
     color: 'bg-gradient-to-br from-yellow-500 to-yellow-700'
   },
   {
-    title: 'Bepul Yetkazish',
-    description: 'Toshkent bo\'ylab',
+    titleKey: 'features.items.eco.title',
+    descKey: 'features.items.eco.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>',
     color: 'bg-gradient-to-br from-red-500 to-red-700'
   },
   {
-    title: 'Sifat Kafolati',
-    description: '100% qoniqish',
+    titleKey: 'features.items.guarantee.title',
+    descKey: 'features.items.guarantee.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>',
     color: 'bg-gradient-to-br from-teal-500 to-teal-700'
   },
   {
-    title: 'Arzon Narxlar',
-    description: 'Chegirmalar bilan',
+    titleKey: 'features.items.price.title',
+    descKey: 'features.items.price.description',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>',
     color: 'bg-gradient-to-br from-indigo-500 to-indigo-700'
   }

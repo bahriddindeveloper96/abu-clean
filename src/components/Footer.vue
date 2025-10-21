@@ -14,7 +14,7 @@
             <span class="text-xl md:text-2xl font-bold">Abu Clean</span>
           </div>
           <p class="text-sm md:text-base text-gray-400 leading-relaxed">
-            Professional tozalash xizmatlari. Toshkent shahrida 10 yildan ortiq tajriba bilan xizmat ko'rsatamiz.
+            {{ $t('footer.description') }}
           </p>
           <div class="flex space-x-4">
             <a 
@@ -30,7 +30,7 @@
 
         <!-- Quick Links -->
         <div>
-          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">Tez Havolalar</h3>
+          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">{{ $t('footer.quickLinks') }}</h3>
           <ul class="space-y-3">
             <li v-for="(link, index) in quickLinks" :key="index">
               <a 
@@ -40,7 +40,7 @@
                 <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-                <span>{{ link.name }}</span>
+                <span>{{ $t(link.key) }}</span>
               </a>
             </li>
           </ul>
@@ -48,7 +48,7 @@
 
         <!-- Services -->
         <div>
-          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">Xizmatlar</h3>
+          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">{{ $t('footer.services') }}</h3>
           <ul class="space-y-3">
             <li v-for="(service, index) in services" :key="index">
               <a 
@@ -58,7 +58,7 @@
                 <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
-                <span>{{ service }}</span>
+                <span>{{ $t(service) }}</span>
               </a>
             </li>
           </ul>
@@ -66,7 +66,7 @@
 
         <!-- Contact Info -->
         <div>
-          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">Bog'lanish</h3>
+          <h3 class="text-base md:text-lg font-bold mb-4 md:mb-6">{{ $t('footer.contactInfo') }}</h3>
           <ul class="space-y-4">
             <li class="flex items-start space-x-3">
               <div class="flex-shrink-0 w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -75,9 +75,9 @@
                 </svg>
               </div>
               <div>
-                <div class="text-sm text-gray-400">Telefon</div>
-                <a href="tel:+998555003838" class="text-white hover:text-primary-400 transition-colors">
-                  +998 55 500 38 38
+                <div class="text-sm text-gray-400">{{ $t('footer.phone') }}</div>
+                <a href="tel:+998972021996" class="text-white hover:text-primary-400 transition-colors">
+                  +998 97 202 19 96
                 </a>
               </div>
             </li>
@@ -88,7 +88,7 @@
                 </svg>
               </div>
               <div>
-                <div class="text-sm text-gray-400">Email</div>
+                <div class="text-sm text-gray-400">{{ $t('footer.email') }}</div>
                 <a href="mailto:info@hamroh-clean.uz" class="text-white hover:text-primary-400 transition-colors">
                   info@hamroh-clean.uz
                 </a>
@@ -102,8 +102,8 @@
                 </svg>
               </div>
               <div>
-                <div class="text-sm text-gray-400">Manzil</div>
-                <p class="text-white">Toshkent, Yunusobod</p>
+                <div class="text-sm text-gray-400">{{ $t('footer.address') }}</div>
+                <p class="text-white">{{ $t('footer.location') }}</p>
               </div>
             </li>
           </ul>
@@ -116,57 +116,78 @@
       <div class="container mx-auto px-4 py-6">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-gray-400 text-xs md:text-sm text-center md:text-left">
-            &copy; {{ currentYear }} Abu Clean. Barcha huquqlar himoyalangan.
+            &copy; {{ currentYear }} Abu Clean. {{ $t('footer.rights') }}
           </p>
           <div class="flex items-center space-x-6">
             <a href="#" class="text-gray-400 hover:text-primary-400 text-xs md:text-sm transition-colors">
-              Maxfiylik Siyosati
+              {{ $t('footer.privacy') }}
             </a>
             <a href="#" class="text-gray-400 hover:text-primary-400 text-xs md:text-sm transition-colors">
-              Foydalanish Shartlari
+              {{ $t('footer.terms') }}
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Scroll to Top Button -->
-    <button
-      @click="scrollToTop"
-      class="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg flex items-center justify-center transform hover:scale-110 transition-all duration-300 z-40"
-      :class="{ 'opacity-0 pointer-events-none': !showScrollTop }"
-    >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-      </svg>
-    </button>
+    <!-- Floating Contact Buttons -->
+    <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
+      <!-- Telegram Button -->
+      <a
+        href="https://t.me/+998972021996"
+        target="_blank"
+        class="group relative w-16 h-16 bg-gradient-to-br from-[#0088cc] via-[#229ED9] to-[#54A9EB] hover:from-[#54A9EB] hover:via-[#229ED9] hover:to-[#0088cc] text-white rounded-3xl shadow-2xl flex items-center justify-center transform hover:scale-125 hover:rotate-[360deg] transition-all duration-700 animate-float"
+        style="animation-delay: 0s;"
+      >
+        <!-- Ripple Effect -->
+        <div class="absolute inset-0 rounded-3xl bg-[#0088cc] opacity-75 animate-ping"></div>
+        
+        <!-- Icon -->
+        <svg class="w-8 h-8 relative z-10 transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
+        </svg>
+        
+        <!-- Glow Effect -->
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transform -skew-x-12 group-hover:translate-x-full transition-all duration-1000"></div>
+        
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-4 px-4 py-2 bg-gradient-to-r from-gray-900 to-gray-800 text-white text-sm font-bold rounded-xl opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 whitespace-nowrap shadow-2xl border border-gray-700">
+          📱 {{ $t('footer.telegram') }}
+          <span class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-gray-900"></span>
+        </span>
+      </a>
+
+      <!-- Phone Button -->
+      <a
+        href="tel:+998972021996"
+        class="group relative w-16 h-16 bg-gradient-to-br from-green-400 via-green-500 to-green-600 hover:from-green-600 hover:via-green-500 hover:to-green-400 text-white rounded-3xl shadow-2xl flex items-center justify-center transform hover:scale-125 hover:-rotate-[360deg] transition-all duration-700 animate-float"
+        style="animation-delay: 0.3s;"
+      >
+        <!-- Ripple Effect -->
+        <div class="absolute inset-0 rounded-3xl bg-green-500 opacity-75 animate-ping" style="animation-delay: 0.3s;"></div>
+        
+        <!-- Icon with Ring Animation -->
+        <svg class="w-8 h-8 relative z-10 transform group-hover:scale-110 group-hover:-rotate-12 transition-all duration-500 animate-wiggle" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+        </svg>
+        
+        <!-- Glow Effect -->
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-30 transform -skew-x-12 group-hover:translate-x-full transition-all duration-1000"></div>
+        
+        <!-- Tooltip -->
+        <span class="absolute right-full mr-4 px-4 py-2 bg-gradient-to-r from-gray-900 to-gray-800 text-white text-sm font-bold rounded-xl opacity-0 group-hover:opacity-100 transform scale-75 group-hover:scale-100 transition-all duration-300 whitespace-nowrap shadow-2xl border border-gray-700">
+          📞 {{ $t('footer.call') }}
+          <span class="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-gray-900"></span>
+        </span>
+      </a>
+    </div>
   </footer>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { computed } from 'vue'
 
-const showScrollTop = ref(false)
 const currentYear = computed(() => new Date().getFullYear())
-
-const handleScroll = () => {
-  showScrollTop.value = window.scrollY > 300
-}
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  })
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
 
 const socials = [
   {
@@ -188,19 +209,19 @@ const socials = [
 ]
 
 const quickLinks = [
-  { name: 'Bosh sahifa', href: '#home' },
-  { name: 'Xizmatlar', href: '#services' },
-  { name: 'Biz haqimizda', href: '#about' },
-  { name: 'Jarayon', href: '#process' },
-  { name: 'Aloqa', href: '#contact' }
+  { key: 'nav.home', href: '#home' },
+  { key: 'nav.services', href: '#services' },
+  { key: 'nav.about', href: '#about' },
+  { key: 'nav.process', href: '#process' },
+  { key: 'nav.contact', href: '#contact' }
 ]
 
 const services = [
-  'Gilam Yuvish',
-  'Mebel Tozalash',
-  'Parda Yuvish',
-  'Ko\'rpa-to\'shak Yuvish',
-  'Uy Tozalash',
-  'Toshpoya Tozalash'
+  'services.items.carpet.title',
+  'services.items.furniture.title',
+  'services.items.curtain.title',
+  'services.items.mattress.title',
+  'services.items.home.title',
+  'services.items.floor.title'
 ]
 </script>

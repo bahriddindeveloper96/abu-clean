@@ -1,0 +1,196 @@
+{
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "about": "Biz haqimizda",
+    "process": "Jarayon",
+    "gallery": "Galereya",
+    "faq": "Savol-Javob",
+    "contact": "Aloqa",
+    "getQuote": "Buyurtma berish"
+  },
+  "hero": {
+    "title": "Professional Tozalash Xizmatlari",
+    "subtitle": "Uyingiz va ofislaringizni professional darajada tozalaymiz",
+    "description": "10 yildan ortiq tajriba bilan yuqori sifatli tozalash xizmatlari. Zamonaviy uskunalar va ekologik toza vositalar.",
+    "getStarted": "Boshlash",
+    "learnMore": "Batafsil",
+    "stats": {
+      "clients": "Mijozlar",
+      "experience": "Yillik Tajriba",
+      "rating": "Reyting",
+      "projects": "Loyihalar"
+    }
+  },
+  "features": {
+    "title": "Nima uchun bizni tanlash kerak?",
+    "subtitle": "Biz professional tozalash xizmatlarida eng yaxshi tanlovmiz",
+    "items": {
+      "professional": {
+        "title": "Professional Jamoa",
+        "description": "Tajribali va malakali xodimlar"
+      },
+      "equipment": {
+        "title": "Zamonaviy Uskunalar",
+        "description": "Eng so'nggi texnologiyalar"
+      },
+      "eco": {
+        "title": "Ekologik Toza",
+        "description": "Tabiatga zarar bermaydigan vositalar"
+      },
+      "support": {
+        "title": "24/7 Qo'llab-quvvatlash",
+        "description": "Har doim sizning xizmatingizdamiz"
+      },
+      "guarantee": {
+        "title": "Sifat Kafolati",
+        "description": "100% sifat kafolati beramiz"
+      },
+      "price": {
+        "title": "Qulay Narxlar",
+        "description": "Eng yaxshi narx-sifat nisbati"
+      }
+    }
+  },
+  "services": {
+    "title": "Bizning Xizmatlarimiz",
+    "subtitle": "Barcha turdagi tozalash xizmatlari",
+    "viewAll": "Barchasini ko'rish",
+    "items": {
+      "carpet": {
+        "title": "Gilam Yuvish",
+        "description": "Professional gilam tozalash xizmati. Chuqur tozalash va dog'larni olib tashlash."
+      },
+      "furniture": {
+        "title": "Mebel Tozalash",
+        "description": "Yumshoq mebel va divan tozalash. Zamonaviy uskunalar bilan."
+      },
+      "curtain": {
+        "title": "Parda Yuvish",
+        "description": "Pardalarni professional yuvish va dazmollash xizmati."
+      },
+      "mattress": {
+        "title": "Ko'rpa-to'shak Yuvish",
+        "description": "Matras va ko'rpa-to'shaklarni chuqur tozalash."
+      },
+      "home": {
+        "title": "Uy Tozalash",
+        "description": "To'liq uy tozalash xizmati. Barcha xonalar va yuzalar."
+      },
+      "office": {
+        "title": "Ofis Tozalash",
+        "description": "Ofis va tijorat binolarini tozalash xizmati."
+      },
+      "window": {
+        "title": "Deraza Yuvish",
+        "description": "Derazalarni professional yuvish va jilolash."
+      },
+      "floor": {
+        "title": "Toshpoya Tozalash",
+        "description": "Har qanday turdagi toshpoyalarni tozalash va parlatish."
+      }
+    }
+  },
+  "process": {
+    "title": "Qanday Ishlaydi?",
+    "subtitle": "Oddiy 4 bosqichda professional xizmat",
+    "steps": {
+      "contact": {
+        "title": "Bog'laning",
+        "description": "Telefon yoki onlayn orqali bog'laning"
+      },
+      "assessment": {
+        "title": "Baholash",
+        "description": "Mutaxassislarimiz joyni ko'rib chiqadi"
+      },
+      "cleaning": {
+        "title": "Tozalash",
+        "description": "Professional tozalash jarayoni"
+      },
+      "quality": {
+        "title": "Sifat Nazorati",
+        "description": "Natijani tekshirish va tasdiqlash"
+      }
+    }
+  },
+  "gallery": {
+    "title": "Ishlarimiz Galereyasi",
+    "subtitle": "Bizning professional ishlarimizni ko'ring",
+    "before": "Oldin",
+    "after": "Keyin"
+  },
+  "faq": {
+    "title": "Ko'p So'raladigan Savollar",
+    "subtitle": "Sizni qiziqtirgan savollar javoblari",
+    "items": {
+      "q1": {
+        "question": "Xizmat narxi qancha?",
+        "answer": "Narx tozalanadigan maydon va xizmat turiga bog'liq. Aniq narx uchun biz bilan bog'laning va bepul konsultatsiya oling."
+      },
+      "q2": {
+        "question": "Qancha vaqt ketadi?",
+        "answer": "Tozalash vaqti xizmat turiga va maydon hajmiga bog'liq. O'rtacha 2-4 soat davom etadi. Katta loyihalar uchun aniq vaqt oldindan kelishiladi."
+      },
+      "q3": {
+        "question": "Ekologik toza vositalardan foydalanamizmi?",
+        "answer": "Ha, biz faqat ekologik toza va sog'liq uchun xavfsiz vositalardan foydalanamiz. Barcha vositalarimiz xalqaro standartlarga javob beradi."
+      },
+      "q4": {
+        "question": "Kafolat berasizmi?",
+        "answer": "Albatta! Biz barcha xizmatlarimizga 100% sifat kafolati beramiz. Agar natija sizni qoniqtirmasa, bepul qayta tozalaymiz."
+      },
+      "q5": {
+        "question": "Qanday to'lov usullari mavjud?",
+        "answer": "Naqd pul, bank kartasi va bank o'tkazmasi orqali to'lash mumkin. To'lov tozalash ishidan keyin amalga oshiriladi."
+      },
+      "q6": {
+        "question": "Tezkor xizmat mavjudmi?",
+        "answer": "Ha, shoshilinch holatlar uchun 24 soat ichida xizmat ko'rsatishimiz mumkin. Tezkor xizmat uchun qo'shimcha to'lov olinadi."
+      }
+    }
+  },
+  "contact": {
+    "title": "Biz Bilan Bog'laning",
+    "subtitle": "Savollaringiz bormi? Biz bilan bog'laning!",
+    "form": {
+      "name": "Ismingiz",
+      "phone": "Telefon raqamingiz",
+      "service": "Xizmat turini tanlang",
+      "message": "Xabaringiz",
+      "send": "Yuborish",
+      "sending": "Yuborilmoqda...",
+      "success": "Xabaringiz muvaffaqiyatli yuborildi!",
+      "error": "Xatolik yuz berdi. Iltimos qaytadan urinib ko'ring."
+    },
+    "info": {
+      "phone": "Telefon",
+      "email": "Email",
+      "address": "Manzil",
+      "workingHours": "Ish vaqti",
+      "hours": "Dushanba - Yakshanba: 8:00 - 20:00"
+    }
+  },
+  "footer": {
+    "description": "Professional tozalash xizmatlari. Toshkent shahrida 10 yildan ortiq tajriba bilan xizmat ko'rsatamiz.",
+    "quickLinks": "Tez Havolalar",
+    "services": "Xizmatlar",
+    "contactInfo": "Bog'lanish",
+    "phone": "Telefon",
+    "email": "Email",
+    "address": "Manzil",
+    "location": "Toshkent, Yunusobod",
+    "privacy": "Maxfiylik Siyosati",
+    "terms": "Foydalanish Shartlari",
+    "rights": "Barcha huquqlar himoyalangan.",
+    "telegram": "Telegram",
+    "call": "Qo'ng'iroq"
+  },
+  "common": {
+    "readMore": "Batafsil",
+    "learnMore": "Ko'proq bilish",
+    "contactUs": "Biz bilan bog'laning",
+    "getQuote": "Narx olish",
+    "bookNow": "Buyurtma berish",
+    "viewAll": "Barchasini ko'rish"
+  }
+}

@@ -25,27 +25,28 @@
         <div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
           <a 
             v-for="item in menuItems" 
-            :key="item.name"
+            :key="item.key"
             :href="item.href" 
             class="text-sm xl:text-base font-medium text-gray-700 hover:text-primary-600 transition-colors duration-300"
           >
-            {{ item.name }}
+            {{ $t(item.key) }}
           </a>
         </div>
 
         <!-- Phone & CTA -->
         <div class="hidden lg:flex items-center space-x-4">
+          <LanguageSwitcher />
           <a 
-            href="tel:+998555003838" 
+            href="tel:+998972021996" 
             class="flex items-center space-x-2 text-sm xl:text-base font-semibold text-primary-600 transition-colors duration-300"
           >
             <svg class="w-4 h-4 xl:w-5 xl:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span>+998 55 500 38 38</span>
+            <span>+998 97 202 19 96</span>
           </a>
           <button class="px-6 xl:px-8 py-3 xl:py-4 bg-primary-600 text-white text-sm xl:text-base font-semibold rounded-lg hover:bg-primary-700 transition-all duration-300">
-            Buyurtma berish
+            {{ $t('nav.getQuote') }}
           </button>
         </div>
 
@@ -75,21 +76,24 @@
         <div v-if="isMobileMenuOpen" class="lg:hidden mt-4 py-4 bg-white rounded-2xl shadow-xl">
           <a 
             v-for="item in menuItems" 
-            :key="item.name"
+            :key="item.key"
             :href="item.href" 
             class="block px-6 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-300"
           >
-            {{ item.name }}
+            {{ $t(item.key) }}
           </a>
           <div class="px-6 py-3 space-y-3">
-            <a href="tel:+998555003838" class="flex items-center space-x-2 text-primary-600 font-semibold">
+            <div class="flex justify-center mb-3">
+              <LanguageSwitcher />
+            </div>
+            <a href="tel:+998972021996" class="flex items-center space-x-2 text-primary-600 font-semibold">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span>+998 55 500 38 38</span>
+              <span>+998 97 202 19 96</span>
             </a>
             <button class="btn-primary w-full">
-              Buyurtma berish
+              {{ $t('nav.getQuote') }}
             </button>
           </div>
         </div>
@@ -99,6 +103,8 @@
 </template>
 
 <script setup>
+import LanguageSwitcher from './LanguageSwitcher.vue'
+
 defineProps({
   isScrolled: Boolean,
   isMobileMenuOpen: Boolean
@@ -107,10 +113,10 @@ defineProps({
 defineEmits(['toggle-menu'])
 
 const menuItems = [
-  { name: 'Bosh sahifa', href: '#home' },
-  { name: 'Xizmatlar', href: '#services' },
-  { name: 'Biz haqimizda', href: '#about' },
-  { name: 'Jarayon', href: '#process' },
-  { name: 'Aloqa', href: '#contact' }
+  { key: 'nav.home', href: '#home' },
+  { key: 'nav.services', href: '#services' },
+  { key: 'nav.about', href: '#about' },
+  { key: 'nav.process', href: '#process' },
+  { key: 'nav.contact', href: '#contact' }
 ]
 </script>

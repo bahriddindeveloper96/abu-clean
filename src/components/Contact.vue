@@ -4,16 +4,13 @@
       <!-- Section Header -->
       <div class="text-center mb-16 animate-slide-up">
         <span class="inline-block px-4 py-2 bg-white text-primary-600 rounded-full text-sm font-semibold mb-4 shadow-md">
-          Bog'lanish
+          {{ $t('nav.contact') }}
         </span>
         <h2 class="section-title">
-          Biz Bilan
-          <span class="block bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-            Bog'laning
-          </span>
+          {{ $t('contact.title') }}
         </h2>
         <p class="section-subtitle mt-4">
-          Savollaringiz bormi? Biz sizga yordam berishga tayyormiz!
+          {{ $t('contact.subtitle') }}
         </p>
       </div>
 
@@ -21,62 +18,62 @@
         <!-- Contact Form -->
         <div class="animate-slide-up">
           <div class="card p-6 md:p-8">
-            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">Xabar Yuboring</h3>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">{{ $t('contact.form.send') }}</h3>
             <form @submit.prevent="handleSubmit" class="space-y-6">
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Ismingiz
+                  {{ $t('contact.form.name') }}
                 </label>
                 <input
                   v-model="form.name"
                   type="text"
                   required
                   class="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all duration-300"
-                  placeholder="Ismingizni kiriting"
+                  :placeholder="$t('contact.form.name')"
                 />
               </div>
 
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Telefon Raqam
+                  {{ $t('contact.form.phone') }}
                 </label>
                 <input
                   v-model="form.phone"
                   type="tel"
                   required
                   class="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all duration-300"
-                  placeholder="+998 __ ___ __ __"
+                  :placeholder="$t('contact.form.phone')"
                 />
               </div>
 
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Xizmat Turi
+                  {{ $t('contact.form.service') }}
                 </label>
                 <select
                   v-model="form.service"
                   required
                   class="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all duration-300"
                 >
-                  <option value="">Xizmatni tanlang</option>
-                  <option value="carpet">Gilam Yuvish</option>
-                  <option value="furniture">Mebel Tozalash</option>
-                  <option value="curtain">Parda Yuvish</option>
-                  <option value="blanket">Ko'rpa-to'shak Yuvish</option>
-                  <option value="house">Uy Tozalash</option>
-                  <option value="paving">Toshpoya Tozalash</option>
+                  <option value="">{{ $t('contact.form.service') }}</option>
+                  <option value="carpet">{{ $t('services.items.carpet.title') }}</option>
+                  <option value="furniture">{{ $t('services.items.furniture.title') }}</option>
+                  <option value="curtain">{{ $t('services.items.curtain.title') }}</option>
+                  <option value="blanket">{{ $t('services.items.mattress.title') }}</option>
+                  <option value="house">{{ $t('services.items.home.title') }}</option>
+                  <option value="paving">{{ $t('services.items.floor.title') }}</option>
                 </select>
               </div>
 
               <div>
                 <label class="block text-sm font-semibold text-gray-700 mb-2">
-                  Xabar
+                  {{ $t('contact.form.message') }}
                 </label>
                 <textarea
                   v-model="form.message"
                   rows="4"
                   class="w-full px-3 md:px-4 py-2 md:py-3 text-sm md:text-base rounded-xl border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition-all duration-300 resize-none"
-                  placeholder="Qo'shimcha ma'lumot..."
+                  :placeholder="$t('contact.form.message')"
                 ></textarea>
               </div>
 
@@ -85,7 +82,7 @@
                 class="w-full px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary-600 to-primary-700 text-white text-sm md:text-base font-semibold rounded-full hover:from-primary-700 hover:to-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <span class="flex items-center justify-center space-x-2">
-                  <span>Yuborish</span>
+                  <span>{{ $t('contact.form.send') }}</span>
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                   </svg>
@@ -113,8 +110,8 @@
                 <div v-html="contact.icon" class="w-7 h-7 text-white"></div>
               </div>
               <div class="flex-1">
-                <h4 class="text-base md:text-lg font-bold text-gray-900 mb-2">{{ contact.title }}</h4>
-                <p class="text-sm md:text-base text-gray-600 mb-2">{{ contact.description }}</p>
+                <h4 class="text-base md:text-lg font-bold text-gray-900 mb-2">{{ $t(contact.titleKey) }}</h4>
+                <p class="text-sm md:text-base text-gray-600 mb-2">{{ $t(contact.descKey) }}</p>
                 <a 
                   :href="contact.link" 
                   class="text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-flex items-center space-x-1"
@@ -130,7 +127,7 @@
 
           <!-- Map Card -->
           <div class="card p-4 md:p-6">
-            <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">Bizning Manzil</h4>
+            <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">{{ $t('footer.address') }}</h4>
             <div class="aspect-video bg-gray-200 rounded-xl overflow-hidden mb-4">
               <div class="w-full h-full bg-gradient-to-br from-primary-200 to-accent-200 flex items-center justify-center">
                 <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,13 +137,13 @@
               </div>
             </div>
             <p class="text-sm md:text-base text-gray-600">
-              Toshkent shahri, Yunusobod tumani
+              {{ $t('footer.location') }}
             </p>
           </div>
 
           <!-- Social Media -->
           <div class="card p-4 md:p-6">
-            <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">Ijtimoiy Tarmoqlar</h4>
+            <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">{{ $t('footer.contactInfo') }}</h4>
             <div class="flex space-x-4">
               <a 
                 v-for="(social, index) in socials" 
@@ -188,26 +185,26 @@ const handleSubmit = () => {
 
 const contacts = [
   {
-    title: 'Telefon',
-    description: 'Har kuni 24/7 xizmat ko\'rsatamiz',
-    value: '+998 55 500 38 38',
-    link: 'tel:+998555003838',
+    titleKey: 'footer.phone',
+    descKey: 'contact.info.workingHours',
+    value: '+998 97 202 19 96',
+    link: 'tel:+998972021996',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700'
   },
   {
-    title: 'Email',
-    description: 'Bizga xat yuboring',
-    value: 'info@hamroh-clean.uz',
-    link: 'mailto:info@hamroh-clean.uz',
+    titleKey: 'footer.email',
+    descKey: 'contact.subtitle',
+    value: 'info@abu-clean.uz',
+    link: 'mailto:info@abu-clean.uz',
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700'
   },
   {
-    title: 'Telegram',
-    description: 'Telegramda yozing',
-    value: '@hamroh_clean',
-    link: 'https://t.me/hamroh_clean',
+    titleKey: 'footer.telegram',
+    descKey: 'contact.subtitle',
+    value: '@abu_clean',
+    link: 'https://t.me/abu_clean',
     icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>',
     color: 'bg-gradient-to-br from-cyan-500 to-cyan-700'
   }
