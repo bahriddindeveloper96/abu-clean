@@ -89,7 +89,7 @@
               </div>
               <div>
                 <div class="text-sm text-gray-400">{{ $t('footer.email') }}</div>
-                <a href="mailto:info@hamroh-clean.uz" class="text-white hover:text-primary-400 transition-colors">
+                <a href="mailto:info@abu-clean.uz" class="text-white hover:text-primary-400 transition-colors">
                   info@abu-clean.uz
                 </a>
               </div>
