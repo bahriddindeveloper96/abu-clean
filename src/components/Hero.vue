@@ -19,11 +19,11 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left Content -->
           <div class="text-center lg:text-left space-y-8 animate-slide-up relative">
-            <!-- <div class="inline-block">
+            <div class="inline-block">
               <span class="px-4 py-2 bg-primary-50 text-primary-600 rounded-md text-sm font-medium">
                 {{ $t('hero.title') }}
               </span>
-            </div> -->
+            </div>
           
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
               {{ $t('hero.subtitle') }}
