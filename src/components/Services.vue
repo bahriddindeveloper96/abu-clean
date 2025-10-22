@@ -28,15 +28,14 @@
           <!-- Background Glow Effect -->
           <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-500" :class="service.color"></div>
           
-          <!-- Icon -->
+          <!-- Image -->
           <div class="mb-6">
-            <div 
-              :class="[
-                'w-14 h-14 md:w-16 md:h-16 rounded-lg flex items-center justify-center transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500',
-                service.color
-              ]"
-            >
-              <div v-html="service.icon" class="w-7 h-7 md:w-8 md:h-8 text-white"></div>
+            <div class="w-full h-48 md:h-56 rounded-lg overflow-hidden transform group-hover:scale-105 transition-all duration-500 shadow-lg">
+              <img 
+                :src="service.image" 
+                :alt="$t(service.titleKey)"
+                class="w-full h-full object-cover"
+              />
             </div>
           </div>
 
@@ -49,7 +48,7 @@
           </p>
 
           <!-- Features -->
-          <ul class="space-y-2 mb-6">
+          <!-- <ul class="space-y-2 mb-6">
             <li 
               v-for="(feature, fIndex) in service.features" 
               :key="fIndex"
@@ -60,7 +59,7 @@
               </svg>
               <span>{{ feature }}</span>
             </li>
-          </ul>
+          </ul> -->
 
           <!-- Price & CTA -->
           <div class="flex items-center justify-between pt-4 border-t border-gray-200">
@@ -111,7 +110,7 @@ const services = [
   {
     titleKey: 'services.items.carpet.title',
     descKey: 'services.items.carpet.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>',
+    image: '/images/kovrov.webp',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '15,000 so\'m'
@@ -119,7 +118,7 @@ const services = [
   {
     titleKey: 'services.items.furniture.title',
     descKey: 'services.items.furniture.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>',
+    image: '/images/mebel.jpg',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '50,000 so\'m'
@@ -127,7 +126,7 @@ const services = [
   {
     titleKey: 'services.items.curtain.title',
     descKey: 'services.items.curtain.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>',
+    image: '/images/parda.jpg',
     color: 'bg-gradient-to-br from-pink-500 to-pink-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '20,000 so\'m'
@@ -135,7 +134,7 @@ const services = [
   {
     titleKey: 'services.items.mattress.title',
     descKey: 'services.items.mattress.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>',
+    image: '/images/matras.webp',
     color: 'bg-gradient-to-br from-green-500 to-green-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '25,000 so\'m'
@@ -143,7 +142,7 @@ const services = [
   {
     titleKey: 'services.items.home.title',
     descKey: 'services.items.home.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>',
+    image: '/images/doma.jpeg',
     color: 'bg-gradient-to-br from-orange-500 to-orange-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '100,000 so\'m'
@@ -151,7 +150,7 @@ const services = [
   {
     titleKey: 'services.items.floor.title',
     descKey: 'services.items.floor.description',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>',
+    image: '/images/shtor.jpg',
     color: 'bg-gradient-to-br from-indigo-500 to-indigo-700',
     features: ['✓', '✓', '✓', '✓'],
     price: '30,000 so\'m'
