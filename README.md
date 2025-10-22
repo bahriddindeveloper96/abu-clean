@@ -1,7 +1,57 @@
-# Vue 3 + Vite
+# Abu Clean - Professional Gilam Yuvish Xizmati
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+🧹 Toshkentdagi eng yaxshi professional gilam yuvish va tozalash xizmati
 
-## Recommended IDE Setup
+## 🚀 Texnologiyalar
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- **Vue 3** - Composition API
+- **Vite** - Fast build tool
+- **TailwindCSS** - Utility-first CSS
+- **Vue I18n** - Ko'p tillilik (UZ, RU, EN)
+
+## 📱 Xususiyatlar
+
+- ✅ Responsive dizayn (Mobile, Tablet, Desktop)
+- ✅ Ko'p tillilik (O'zbek, Rus, Ingliz)
+- ✅ Before/After slider (Gallery)
+- ✅ SEO optimizatsiya
+- ✅ PWA ready
+- ✅ Fast loading
+- ✅ Accessibility (a11y)
+
+## 🔧 Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📊 SEO Features
+
+- ✅ Meta tags (title, description, keywords)
+- ✅ Open Graph tags (Facebook)
+- ✅ Twitter Card tags
+- ✅ Structured Data (Schema.org - LocalBusiness)
+- ✅ Sitemap.xml
+- ✅ Robots.txt
+- ✅ Canonical URLs
+- ✅ PWA Manifest
+
+## 📞 Aloqa
+
+- **Telefon:** +998 97 202 19 96
+- **Email:** info@abu-clean.uz
+- **Website:** https://abu-clean.uz
+
+## 📄 License
+
+© 2025 Abu Clean. All rights reserved.

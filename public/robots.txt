@@ -1,0 +1,13 @@
+# Abu Clean - Robots.txt
+User-agent: *
+Allow: /
+
+# Disallow admin pages (if any in future)
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://abu-clean.uz/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
