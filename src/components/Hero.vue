@@ -19,11 +19,11 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <!-- Left Content -->
           <div class="text-center lg:text-left space-y-8 animate-slide-up relative">
-            <div class="inline-block">
+            <!-- <div class="inline-block">
               <span class="px-4 py-2 bg-primary-50 text-primary-600 rounded-md text-sm font-medium">
                 {{ $t('hero.title') }}
               </span>
-            </div>
+            </div> -->
           
             <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
               {{ $t('hero.subtitle') }}
@@ -88,12 +88,12 @@
           </div>
 
           <!-- Right Side - Banner Slider -->
-          <div class="relative animate-slide-up hidden lg:block" style="animation-delay: 0.2s;">
+          <div class="relative animate-slide-up mt-12 lg:mt-0" style="animation-delay: 0.2s;">
             <div class="relative">
               <!-- Main Banner Slider -->
-              <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div class="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
                 <!-- Slider Container -->
-                <div class="relative aspect-[4/3]">
+                <div class="relative aspect-[16/10] sm:aspect-[4/3]">
                   <!-- Slides -->
                   <transition name="slide-fade" mode="out-in">
                     <div 
@@ -111,7 +111,7 @@
                       <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                       
                       <!-- Content -->
-                      <div class="absolute inset-0 flex items-end justify-center p-8">
+                      <div class="absolute inset-0 flex items-end justify-center p-4 sm:p-6 lg:p-8">
                         <div class="text-center text-white">
                         </div>
                       </div>
@@ -122,38 +122,38 @@
                 <!-- Navigation Arrows -->
                 <button 
                   @click="prevSlide"
-                  class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                  class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
                 >
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                   </svg>
                 </button>
                 <button 
                   @click="nextSlide"
-                  class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                  class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
                 >
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                   </svg>
                 </button>
 
                 <!-- Dots Indicator -->
-                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
+                <div class="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
                   <button
                     v-for="(slide, index) in slides"
                     :key="index"
                     @click="currentSlide = index"
                     :class="[
-                      'w-3 h-3 rounded-full transition-all duration-300',
-                      currentSlide === index ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/75'
+                      'w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300',
+                      currentSlide === index ? 'bg-white w-6 sm:w-8' : 'bg-white/50 hover:bg-white/75'
                     ]"
                   ></button>
                 </div>
               </div>
 
-              <!-- Floating Elements -->
-              <div class="absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full opacity-70 animate-float"></div>
-              <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-pink-400 rounded-full opacity-70 animate-float" style="animation-delay: 1.5s;"></div>
+              <!-- Floating Elements - Hidden on mobile -->
+              <div class="hidden lg:block absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full opacity-70 animate-float"></div>
+              <div class="hidden lg:block absolute -bottom-4 -right-4 w-16 h-16 bg-pink-400 rounded-full opacity-70 animate-float" style="animation-delay: 1.5s;"></div>
             </div>
           </div>
         </div>
@@ -161,14 +161,14 @@
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <!-- <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
       <a href="#services" class="flex flex-col items-center text-gray-400 hover:text-gray-900 transition-colors">
         <span class="text-sm mb-2">Pastga</span>
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
         </svg>
       </a>
-    </div>
+    </div> -->
   </section>
 </template>
 
@@ -243,20 +243,31 @@ onUnmounted(() => {
 
 <style scoped>
 .slide-fade-enter-active {
-  transition: all 0.5s ease;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide-fade-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide-fade-enter-from {
-  transform: translateX(30px);
+  transform: translateX(20px) scale(0.98);
   opacity: 0;
 }
 
 .slide-fade-leave-to {
-  transform: translateX(-30px);
+  transform: translateX(-20px) scale(0.98);
   opacity: 0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .slide-fade-enter-from {
+    transform: translateX(15px) scale(0.99);
+  }
+  
+  .slide-fade-leave-to {
+    transform: translateX(-15px) scale(0.99);
+  }
 }
 </style>
