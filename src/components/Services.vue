@@ -115,7 +115,7 @@ const services = [
     image: '/images/kovrov.webp',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700',
     features: ['✓', '✓', '✓', '✓'],
-    price: '15,000 so\'m'
+   // price: '15,000 so\'m'
   },
   {
     titleKey: 'services.items.furniture.title',
@@ -123,7 +123,7 @@ const services = [
     image: '/images/mebel.jpg',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700',
     features: ['✓', '✓', '✓', '✓'],
-    price: '50,000 so\'m'
+   // price: '50,000 so\'m'
   },
   {
     titleKey: 'services.items.curtain.title',
@@ -131,7 +131,7 @@ const services = [
     image: '/images/parda.jpg',
     color: 'bg-gradient-to-br from-pink-500 to-pink-700',
     features: ['✓', '✓', '✓', '✓'],
-    price: '20,000 so\'m'
+   // price: '20,000 so\'m'
   },
   {
     titleKey: 'services.items.mattress.title',
@@ -139,23 +139,23 @@ const services = [
     image: '/images/matras.webp',
     color: 'bg-gradient-to-br from-green-500 to-green-700',
     features: ['✓', '✓', '✓', '✓'],
-    price: '25,000 so\'m'
+   // price: '25,000 so\'m'
   },
-  {
-    titleKey: 'services.items.home.title',
-    descKey: 'services.items.home.description',
-    image: '/images/doma.jpeg',
-    color: 'bg-gradient-to-br from-orange-500 to-orange-700',
-    features: ['✓', '✓', '✓', '✓'],
-    price: '100,000 so\'m'
-  },
+  // {
+  //   titleKey: 'services.items.home.title',
+  //   descKey: 'services.items.home.description',
+  //   image: '/images/doma.jpeg',
+  //   color: 'bg-gradient-to-br from-orange-500 to-orange-700',
+  //   features: ['✓', '✓', '✓', '✓'],
+  //   price: '100,000 so\'m'
+  // },
   {
     titleKey: 'services.items.floor.title',
     descKey: 'services.items.floor.description',
     image: '/images/shtor.jpg',
     color: 'bg-gradient-to-br from-indigo-500 to-indigo-700',
     features: ['✓', '✓', '✓', '✓'],
-    price: '30,000 so\'m'
+   // price: '30,000 so\'m'
   }
 ]
 </script>

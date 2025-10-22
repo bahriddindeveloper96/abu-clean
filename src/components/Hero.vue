@@ -129,11 +129,7 @@ const slides = ref([
   {
     key: 'carpet',
     image: '/images/1.webp'
-  }, 
-  {
-    key: 'curtain',
-    image: '/images/parda.jpg'
-  },
+  },   
   {
     key: 'blanket',
     image: '/images/banner4.webp'
@@ -141,7 +137,11 @@ const slides = ref([
   {
     key: 'furniture',
     image: '/images/banner3.webp'
-  }
+  },
+  {
+    key: 'curtain',
+    image: '/images/parda.jpg'
+  },
 ])
 
 const nextSlide = () => {
@@ -155,7 +155,7 @@ const prevSlide = () => {
 const startAutoSlide = () => {
   slideInterval = setInterval(() => {
     nextSlide()
-  }, 30000) // 10 soniyada bir o'zgaradi
+  }, 60000) // 10 soniyada bir o'zgaradi
 }
 
 const stopAutoSlide = () => {
