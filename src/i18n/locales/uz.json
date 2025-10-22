@@ -246,5 +246,19 @@
     "getQuote": "Narx olish",
     "bookNow": "Buyurtma berish",
     "viewAll": "Barchasini ko'rish"
+  },
+  "modal": {
+    "title": "Buyurtma Berish",
+    "subtitle": "Ma'lumotlaringizni qoldiring, biz siz bilan bog'lanamiz",
+    "form": {
+      "name": "Ismingiz",
+      "namePlaceholder": "To'liq ismingizni kiriting",
+      "phone": "Telefon raqamingiz",
+      "service": "Xizmat turini tanlang",
+      "selectService": "Xizmatni tanlang",
+      "submit": "Yuborish",
+      "sending": "Yuborilmoqda...",
+      "success": "Muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz."
+    }
   }
 }

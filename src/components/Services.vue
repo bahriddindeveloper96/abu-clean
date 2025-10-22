@@ -67,7 +67,7 @@
               <span class="text-xs md:text-sm text-gray-500">{{ $t('common.readMore') }}</span>
               <div class="text-xl md:text-2xl font-bold text-gray-900">{{ service.price }}</div>
             </div>
-            <button class="px-4 md:px-6 py-2 bg-primary-600 text-white text-sm md:text-base rounded-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <button @click="$emit('open-modal')" class="px-4 md:px-6 py-2 bg-primary-600 text-white text-sm md:text-base rounded-lg hover:bg-primary-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
               <span class="flex items-center space-x-1">
                 <span>{{ $t('common.bookNow') }}</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,12 +92,12 @@
             {{ $t('contact.subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="btn-primary">
+            <button @click="$emit('open-modal')" class="btn-primary">
               {{ $t('nav.getQuote') }}
             </button>
-            <button class="btn-secondary">
+            <a href="#contact" class="btn-secondary">
               {{ $t('common.learnMore') }}
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -106,6 +106,8 @@
 </template>
 
 <script setup>
+defineEmits(['open-modal'])
+
 const services = [
   {
     titleKey: 'services.items.carpet.title',

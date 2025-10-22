@@ -246,5 +246,19 @@
     "getQuote": "Get Quote",
     "bookNow": "Book Now",
     "viewAll": "View All"
+  },
+  "modal": {
+    "title": "Place an Order",
+    "subtitle": "Leave your details, we will contact you",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "Enter your full name",
+      "phone": "Your Phone Number",
+      "service": "Select Service Type",
+      "selectService": "Select a service",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Successfully sent! We will contact you soon."
+    }
   }
 }

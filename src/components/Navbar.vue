@@ -45,7 +45,7 @@
             </svg>
             <span>+998 97 202 19 96</span>
           </a>
-          <button class="px-6 xl:px-8 py-3 xl:py-4 bg-primary-600 text-white text-sm xl:text-base font-semibold rounded-lg hover:bg-primary-700 transition-all duration-300">
+          <button @click="$emit('open-modal')" class="px-6 xl:px-8 py-3 xl:py-4 bg-primary-600 text-white text-sm xl:text-base font-semibold rounded-lg hover:bg-primary-700 transition-all duration-300">
             {{ $t('nav.getQuote') }}
           </button>
         </div>
@@ -92,7 +92,7 @@
               </svg>
               <span>+998 97 202 19 96</span>
             </a>
-            <button class="btn-primary w-full">
+            <button @click="$emit('open-modal')" class="btn-primary w-full">
               {{ $t('nav.getQuote') }}
             </button>
           </div>
@@ -110,7 +110,7 @@ defineProps({
   isMobileMenuOpen: Boolean
 })
 
-defineEmits(['toggle-menu'])
+defineEmits(['toggle-menu', 'open-modal'])
 
 const menuItems = [
   { key: 'nav.home', href: '#home' },

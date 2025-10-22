@@ -33,12 +33,12 @@
                     </p>
                     
                     <!-- Price -->
-                    <div class="inline-flex items-center bg-primary-500 px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl mb-6 shadow-2xl transform hover:scale-105 transition-all duration-300">
+                    <!-- <div class="inline-flex items-center bg-primary-500 px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl mb-6 shadow-2xl transform hover:scale-105 transition-all duration-300">
                       <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       <span class="font-bold text-xl sm:text-2xl lg:text-3xl">{{ $t(`hero.slides.${slides[currentSlide].key}.price`) }}</span>
-                    </div>
+                    </div> -->
                   </div>
 
                   <!-- Features -->
@@ -55,13 +55,25 @@
                     </div>
                   </div>
 
-                  <!-- CTA Button -->
-                  <div class="animate-slide-up" style="animation-delay: 0.4s;">
-                    <a href="tel:+998972021996" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                  <!-- CTA Buttons -->
+                  <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s;">
+                    <button @click="$emit('open-modal')" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                      <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                      <span>{{ $t('common.bookNow') }}</span>
+                    </button>
+                    <a href="tel:+998972021996" class="inline-flex items-center bg-primary-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
                       <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                       </svg>
                       <span>+998 97 202 19 96</span>
+                    </a>
+                    <a href="tel:+998900761996" class="inline-flex items-center bg-primary-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                      <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <span>+998 90 076 19 96</span>
                     </a>
                   </div>
                 </div>
@@ -108,6 +120,8 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
+defineEmits(['open-modal'])
+
 const currentSlide = ref(0)
 let slideInterval = null
 
@@ -141,7 +155,7 @@ const prevSlide = () => {
 const startAutoSlide = () => {
   slideInterval = setInterval(() => {
     nextSlide()
-  }, 4000) // 4 soniyada bir o'zgaradi
+  }, 20000) // 10 soniyada bir o'zgaradi
 }
 
 const stopAutoSlide = () => {

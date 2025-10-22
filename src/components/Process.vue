@@ -90,15 +90,15 @@
             {{ $t('process.cta.subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="btn-primary transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
+            <a href="tel:+998972021996" class="btn-primary transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
               <span class="flex items-center justify-center space-x-2">
                 <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
                 <span>{{ $t('process.cta.phone') }}</span>
               </span>
-            </button>
-            <button class="btn-secondary transform hover:scale-105 transition-all duration-300">
+            </a>
+            <button @click="$emit('open-modal')" class="btn-secondary transform hover:scale-105 transition-all duration-300">
               <span class="flex items-center space-x-2">
                 <span>{{ $t('process.cta.button') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,6 +118,8 @@ import { useI18n } from 'vue-i18n'
 import { computed } from 'vue'
 
 const { t } = useI18n()
+
+defineEmits(['open-modal'])
 
 const steps = computed(() => [
   {
