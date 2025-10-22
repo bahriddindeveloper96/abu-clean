@@ -155,7 +155,7 @@ const prevSlide = () => {
 const startAutoSlide = () => {
   slideInterval = setInterval(() => {
     nextSlide()
-  }, 20000) // 10 soniyada bir o'zgaradi
+  }, 30000) // 10 soniyada bir o'zgaradi
 }
 
 const stopAutoSlide = () => {
