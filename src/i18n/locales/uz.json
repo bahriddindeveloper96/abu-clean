@@ -92,25 +92,33 @@
     }
   },
   "process": {
-    "title": "Qanday Ishlaydi?",
-    "subtitle": "Oddiy 4 bosqichda professional xizmat",
+    "badge": "Qanday Ishlaydi?",
+    "title": "Oddiy va Tez",
+    "titleHighlight": "Jarayon",
+    "subtitle": "Faqat 4 ta oddiy qadam - va sizning uyingiz pokiza bo'ladi",
     "steps": {
-      "contact": {
-        "title": "Bog'laning",
-        "description": "Telefon yoki onlayn orqali bog'laning"
+      "step1": {
+        "title": "Qo'ng'iroq Qiling",
+        "description": "Bizga qo'ng'iroq qiling yoki online buyurtma bering. Mutaxassislarimiz sizga maslahat berishadi."
       },
-      "assessment": {
-        "title": "Baholash",
-        "description": "Mutaxassislarimiz joyni ko'rib chiqadi"
+      "step2": {
+        "title": "Olib Ketamiz",
+        "description": "Bizning jamoamiz sizning uyingizga kelib, gilamlaringizni bepul olib ketadi."
       },
-      "cleaning": {
-        "title": "Tozalash",
-        "description": "Professional tozalash jarayoni"
+      "step3": {
+        "title": "Tozalaymiz",
+        "description": "Professional uskunalar va ekologik vositalar bilan chuqur tozalash va dezinfeksiya."
       },
-      "quality": {
-        "title": "Sifat Nazorati",
-        "description": "Natijani tekshirish va tasdiqlash"
+      "step4": {
+        "title": "Yetkazamiz",
+        "description": "24 soat ichida tozalangan va quritilgan gilamlaringizni uyingizga yetkazib beramiz."
       }
+    },
+    "cta": {
+      "title": "Tayyor bo'lsangiz, boshlaylik!",
+      "subtitle": "Hoziroq buyurtma bering va birinchi xizmatga 20% chegirma oling",
+      "phone": "+998 55 500 38 38",
+      "button": "Online Buyurtma"
     }
   },
   "gallery": {

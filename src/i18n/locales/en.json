@@ -92,25 +92,33 @@
     }
   },
   "process": {
-    "title": "How It Works?",
-    "subtitle": "Professional service in 4 simple steps",
+    "badge": "How It Works?",
+    "title": "Simple and Fast",
+    "titleHighlight": "Process",
+    "subtitle": "Just 4 simple steps - and your home will be spotless",
     "steps": {
-      "contact": {
-        "title": "Contact Us",
-        "description": "Contact us by phone or online"
+      "step1": {
+        "title": "Call Us",
+        "description": "Call us or place an online order. Our specialists will advise you."
       },
-      "assessment": {
-        "title": "Assessment",
-        "description": "Our specialists inspect the site"
+      "step2": {
+        "title": "We Pick Up",
+        "description": "Our team will come to your home and pick up your carpets for free."
       },
-      "cleaning": {
-        "title": "Cleaning",
-        "description": "Professional cleaning process"
+      "step3": {
+        "title": "We Clean",
+        "description": "Deep cleaning and disinfection with professional equipment and eco-friendly products."
       },
-      "quality": {
-        "title": "Quality Control",
-        "description": "Checking and confirming results"
+      "step4": {
+        "title": "We Deliver",
+        "description": "Within 24 hours, we deliver your cleaned and dried carpets back to your home."
       }
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Order now and get 20% off your first service",
+      "phone": "+998 55 500 38 38",
+      "button": "Order Online"
     }
   },
   "gallery": {

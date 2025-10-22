@@ -9,16 +9,16 @@
       <!-- Section Header -->
       <div class="text-center mb-16 animate-slide-up">
         <span class="inline-block px-4 py-2 bg-white text-primary-600 rounded-full text-sm font-semibold mb-4 shadow-md">
-          Qanday Ishlaydi?
+          {{ $t('process.badge') }}
         </span>
         <h2 class="section-title">
-          Oddiy va Tez
+          {{ $t('process.title') }}
           <span class="block bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-            Jarayon
+            {{ $t('process.titleHighlight') }}
           </span>
         </h2>
         <p class="section-subtitle mt-4">
-          Faqat 4 ta oddiy qadam - va sizning uyingiz pokiza bo'ladi
+          {{ $t('process.subtitle') }}
         </p>
       </div>
 
@@ -84,10 +84,10 @@
       <div class="mt-12 md:mt-16 text-center animate-slide-up">
         <div class="inline-block bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-12">
           <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
-            Tayyor bo'lsangiz, boshlaylik!
+            {{ $t('process.cta.title') }}
           </h3>
           <p class="text-sm md:text-base text-gray-600 mb-6 max-w-2xl mx-auto">
-            Hoziroq buyurtma bering va birinchi xizmatga 20% chegirma oling
+            {{ $t('process.cta.subtitle') }}
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <button class="btn-primary transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
@@ -95,12 +95,12 @@
                 <svg class="w-5 h-5 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span>+998 55 500 38 38</span>
+                <span>{{ $t('process.cta.phone') }}</span>
               </span>
             </button>
             <button class="btn-secondary transform hover:scale-105 transition-all duration-300">
               <span class="flex items-center space-x-2">
-                <span>Online Buyurtma</span>
+                <span>{{ $t('process.cta.button') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                 </svg>
@@ -114,34 +114,39 @@
 </template>
 
 <script setup>
-const steps = [
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
+
+const steps = computed(() => [
   {
-    title: 'Qo\'ng\'iroq Qiling',
-    description: 'Bizga qo\'ng\'iroq qiling yoki online buyurtma bering. Mutaxassislarimiz sizga maslahat berishadi.',
+    title: t('process.steps.step1.title'),
+    description: t('process.steps.step1.description'),
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>',
     color: 'bg-gradient-to-br from-blue-500 to-blue-700',
     iconBg: 'bg-gradient-to-br from-blue-400 to-blue-600'
   },
   {
-    title: 'Olib Ketamiz',
-    description: 'Bizning jamoamiz sizning uyingizga kelib, gilamlaringizni bepul olib ketadi.',
+    title: t('process.steps.step2.title'),
+    description: t('process.steps.step2.description'),
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700',
     iconBg: 'bg-gradient-to-br from-purple-400 to-purple-600'
   },
   {
-    title: 'Tozalaymiz',
-    description: 'Professional uskunalar va ekologik vositalar bilan chuqur tozalash va dezinfeksiya.',
+    title: t('process.steps.step3.title'),
+    description: t('process.steps.step3.description'),
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>',
     color: 'bg-gradient-to-br from-green-500 to-green-700',
     iconBg: 'bg-gradient-to-br from-green-400 to-green-600'
   },
   {
-    title: 'Yetkazamiz',
-    description: '24 soat ichida tozalangan va quritilgan gilamlaringizni uyingizga yetkazib beramiz.',
+    title: t('process.steps.step4.title'),
+    description: t('process.steps.step4.description'),
     icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>',
     color: 'bg-gradient-to-br from-orange-500 to-orange-700',
     iconBg: 'bg-gradient-to-br from-orange-400 to-orange-600'
   }
-]
+])
 </script>
