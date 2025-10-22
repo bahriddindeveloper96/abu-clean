@@ -1,223 +1,141 @@
 <template>
-  <section id="home" class="relative min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden">
-    <!-- Animated Background Elements -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <!-- Floating Bubbles -->
-      <CleaningBubbles />
-      
-      <!-- Decorative Circles -->
-      <div class="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float"></div>
-      <div class="absolute top-40 right-20 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 2s;"></div>
-      <div class="absolute -bottom-20 left-1/3 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-float" style="animation-delay: 4s;"></div>
-      
-      <!-- Sparkles -->
-      <Sparkles />
-    </div>
-
-    <div class="container mx-auto px-4 py-20 relative z-10">
-      <div class="max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Left Content -->
-          <div class="text-center lg:text-left space-y-8 animate-slide-up relative">
-            <div class="inline-block">
-              <span class="px-4 py-2 bg-primary-50 text-primary-600 rounded-md text-sm font-medium">
-                {{ $t('hero.title') }}
-              </span>
-            </div>
-          
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
-              {{ $t('hero.subtitle') }}
-              <span class="block bg-gradient-to-r from-primary-600 via-blue-600 to-cyan-600 bg-clip-text text-transparent animate-pulse-slow">
-                ✨
-              </span>
-            </h1>
-          
-            <p class="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed max-w-3xl lg:mx-0">
-              {{ $t('hero.description') }}
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button class="btn-primary transform hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                <span class="flex items-center justify-center space-x-2">
-                  <span>{{ $t('hero.getStarted') }}</span>
-                  <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </span>
-              </button>
-              <button class="btn-secondary transform hover:scale-105 transition-all duration-300">
-                <span class="flex items-center justify-center space-x-2">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <span>+998 97 202 19 96</span>
-                </span>
-              </button>
-            </div>
-
-            <!-- Stats -->
-            <div class="grid grid-cols-3 gap-6 sm:gap-12 pt-12 max-w-3xl lg:mx-0">
-              <div class="text-center lg:text-left group cursor-pointer">
-                <div class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">5000+</div>
-                <div class="text-gray-600 text-sm sm:text-base flex items-center justify-center lg:justify-start space-x-1">
-                  <svg class="w-4 h-4 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                  <span>{{ $t('hero.stats.clients') }}</span>
-                </div>
-              </div>
-              <div class="text-center lg:text-left group cursor-pointer">
-                <div class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">10+</div>
-                <div class="text-gray-600 text-sm sm:text-base flex items-center justify-center lg:justify-start space-x-1">
-                  <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span>{{ $t('hero.stats.experience') }}</span>
-                </div>
-              </div>
-              <div class="text-center lg:text-left group cursor-pointer">
-                <div class="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 transform group-hover:scale-110 transition-transform duration-300">100%</div>
-                <div class="text-gray-600 text-sm sm:text-base flex items-center justify-center lg:justify-start space-x-1">
-                  <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                  <span>{{ $t('hero.stats.rating') }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Side - Banner Slider -->
-          <div class="relative animate-slide-up mt-12 lg:mt-0" style="animation-delay: 0.2s;">
-            <div class="relative">
-              <!-- Main Banner Slider -->
-              <div class="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
-                <!-- Slider Container -->
-                <div class="relative aspect-[16/10] sm:aspect-[4/3]">
-                  <!-- Slides -->
-                  <transition name="slide-fade" mode="out-in">
-                    <div 
-                      :key="currentSlide"
-                      class="absolute inset-0"
-                    >
-                      <!-- Background Image -->
-                      <img 
-                        :src="slides[currentSlide].image" 
-                        :alt="slides[currentSlide].title"
-                        class="absolute inset-0 w-full h-full object-cover"
-                      />
-                      
-                      <!-- Overlay Gradient -->
-                      <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
-                      
-                      <!-- Content -->
-                      <div class="absolute inset-0 flex items-end justify-center p-4 sm:p-6 lg:p-8">
-                        <div class="text-center text-white">
-                        </div>
-                      </div>
+  <section id="home" class="relative pt-24 sm:pt-28 lg:pt-32 pb-12 sm:pb-16 lg:pb-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Banner Slider Container -->
+      <div class="relative rounded-2xl lg:rounded-3xl overflow-hidden shadow-2xl">
+        <div class="relative" style="height: 80vh; min-height: 600px; max-height: 800px;">
+          <!-- Slides -->
+          <transition name="slide-fade" mode="out-in">
+            <div 
+              :key="currentSlide"
+              class="absolute inset-0"
+            >
+              <!-- Background Image -->
+              <img 
+                :src="slides[currentSlide].image" 
+                :alt="$t(`hero.slides.${slides[currentSlide].key}.title`)"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+              
+              <!-- Overlay Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30"></div>
+              
+              <!-- Content -->
+              <div class="absolute inset-0 flex items-center justify-center p-6 sm:p-8 lg:p-12">
+                <div class="max-w-4xl mx-auto text-center text-white">
+                  <!-- Title & Description -->
+                  <div class="mb-6 animate-slide-up">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                      {{ $t(`hero.slides.${slides[currentSlide].key}.title`) }}
+                    </h1>
+                    <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 mb-6 leading-relaxed">
+                      {{ $t(`hero.slides.${slides[currentSlide].key}.description`) }}
+                    </p>
+                    
+                    <!-- Price -->
+                    <div class="inline-flex items-center bg-primary-500 px-5 py-2.5 sm:px-6 sm:py-3 rounded-xl mb-6 shadow-2xl transform hover:scale-105 transition-all duration-300">
+                      <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span class="font-bold text-xl sm:text-2xl lg:text-3xl">{{ $t(`hero.slides.${slides[currentSlide].key}.price`) }}</span>
                     </div>
-                  </transition>
-                </div>
+                  </div>
 
-                <!-- Navigation Arrows -->
-                <button 
-                  @click="prevSlide"
-                  class="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                >
-                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button 
-                  @click="nextSlide"
-                  class="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                >
-                  <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
+                  <!-- Features -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-2xl mx-auto mb-6 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div 
+                      v-for="(feature, index) in $tm(`hero.slides.${slides[currentSlide].key}.features`)"
+                      :key="index"
+                      class="flex items-center justify-center sm:justify-start text-sm sm:text-base lg:text-lg bg-white/10 backdrop-blur-sm px-3 py-2.5 rounded-lg hover:bg-white/20 transition-all duration-300"
+                    >
+                      <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span class="font-medium">{{ feature }}</span>
+                    </div>
+                  </div>
 
-                <!-- Dots Indicator -->
-                <div class="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
-                  <button
-                    v-for="(slide, index) in slides"
-                    :key="index"
-                    @click="currentSlide = index"
-                    :class="[
-                      'w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300',
-                      currentSlide === index ? 'bg-white w-6 sm:w-8' : 'bg-white/50 hover:bg-white/75'
-                    ]"
-                  ></button>
+                  <!-- CTA Button -->
+                  <div class="animate-slide-up" style="animation-delay: 0.4s;">
+                    <a href="tel:+998972021996" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                      <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <span>+998 97 202 19 96</span>
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              <!-- Floating Elements - Hidden on mobile -->
-              <div class="hidden lg:block absolute -top-6 -left-6 w-20 h-20 bg-yellow-400 rounded-full opacity-70 animate-float"></div>
-              <div class="hidden lg:block absolute -bottom-4 -right-4 w-16 h-16 bg-pink-400 rounded-full opacity-70 animate-float" style="animation-delay: 1.5s;"></div>
             </div>
+          </transition>
+
+          <!-- Navigation Arrows -->
+          <button 
+            @click="prevSlide"
+            class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 z-20"
+          >
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button 
+            @click="nextSlide"
+            class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 z-20"
+          >
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+          <!-- Dots Indicator -->
+          <div class="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+            <button
+              v-for="(slide, index) in slides"
+              :key="index"
+              @click="currentSlide = index"
+              :class="[
+                'w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300',
+                currentSlide === index ? 'bg-white w-8 sm:w-10' : 'bg-white/50 hover:bg-white/75'
+              ]"
+            ></button>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Scroll Indicator -->
-    <!-- <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#services" class="flex flex-col items-center text-gray-400 hover:text-gray-900 transition-colors">
-        <span class="text-sm mb-2">Pastga</span>
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </a>
-    </div> -->
   </section>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import CleaningBubbles from './CleaningBubbles.vue'
-import Sparkles from './Sparkles.vue'
 
 const currentSlide = ref(0)
 let slideInterval = null
 
-const slides = [
+const slides = ref([
   {
-    title: 'Gilam Yuvish',
-    description: 'Professional uskunalar bilan chuqur tozalash',
-    price: '15,000 so\'m',
-    image: '/images/1.webp',
-    icon: '<svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>'
+    key: 'carpet',
+    image: '/images/1.webp'
   }, 
   {
-    title: 'Gilam Yuvish',
-    description: 'Professional uskunalar bilan chuqur tozalash',
-    price: '15,000 so\'m',
-    image: '/images/banner3.webp',
-    icon: '<svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>'
-  },  
-  
-  {
-    title: 'Parda Yuvish',
-    description: 'Nozik pardalar ehtiyotkorlik bilan yuvish',
-    price: '20,000 so\'m',
-    image: '/images/parda.jpg',
-    icon: '<svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>'
+    key: 'curtain',
+    image: '/images/parda.jpg'
   },
   {
-    title: 'Ko\'rpa Yuvish',
-    description: 'Katta o\'lchamli ko\'rpalar tozalash',
-    price: '25,000 so\'m',
-    image: '/images/banner4.webp',
-    icon: '<svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>'
+    key: 'blanket',
+    image: '/images/banner4.webp'
+  },
+  {
+    key: 'furniture',
+    image: '/images/banner3.webp'
   }
-]
+])
 
 const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % slides.length
+  currentSlide.value = (currentSlide.value + 1) % slides.value.length
 }
 
 const prevSlide = () => {
-  currentSlide.value = (currentSlide.value - 1 + slides.length) % slides.length
+  currentSlide.value = (currentSlide.value - 1 + slides.value.length) % slides.value.length
 }
 
 const startAutoSlide = () => {

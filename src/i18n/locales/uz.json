@@ -20,6 +20,52 @@
       "experience": "Yillik Tajriba",
       "rating": "Reyting",
       "projects": "Loyihalar"
+    },
+    "slides": {
+      "carpet": {
+        "title": "Gilam Yuvish Xizmati",
+        "description": "Professional uskunalar bilan chuqur tozalash va dog'larni olib tashlash. Har qanday o'lcham va turdagi gilamlar uchun.",
+        "price": "15,000 so'm/m²",
+        "features": [
+          "Chuqur tozalash va dezinfeksiya",
+          "Dog'larni professional olib tashlash",
+          "Bepul olib ketish va yetkazib berish",
+          "24 soat ichida tayyor"
+        ]
+      },
+      "curtain": {
+        "title": "Parda Yuvish Xizmati",
+        "description": "Nozik pardalar ehtiyotkorlik bilan yuviladi va dazmollanadi. Har qanday matolardan tayyorlangan pardalar uchun.",
+        "price": "20,000 so'm/m²",
+        "features": [
+          "Nozik to'qimalar uchun maxsus yuvish",
+          "Professional dazmollash",
+          "Rang va shakl saqlanadi",
+          "Tez va sifatli xizmat"
+        ]
+      },
+      "blanket": {
+        "title": "Ko'rpa-to'shak Yuvish",
+        "description": "Katta o'lchamli ko'rpa va to'shaklarni chuqur tozalash. Zamonaviy uskunalar bilan yuqori sifatli xizmat.",
+        "price": "25,000 so'm/dona",
+        "features": [
+          "Katta hajmli buyumlar uchun maxsus uskunalar",
+          "Antibakterial tozalash",
+          "To'liq quritish va dezinfeksiya",
+          "Sog'liq uchun xavfsiz vositalar"
+        ]
+      },
+      "furniture": {
+        "title": "Mebel Tozalash Xizmati",
+        "description": "Yumshoq mebel va divanlarni professional tozalash. Zamonaviy texnologiyalar bilan chuqur tozalash.",
+        "price": "30,000 so'm/joy",
+        "features": [
+          "Yumshoq mebel chuqur tozalash",
+          "Dog' va hidlarni olib tashlash",
+          "Uyda xizmat ko'rsatish",
+          "Ekologik toza vositalar"
+        ]
+      }
     }
   },
   "features": {

@@ -20,6 +20,52 @@
       "experience": "Years Experience",
       "rating": "Rating",
       "projects": "Projects"
+    },
+    "slides": {
+      "carpet": {
+        "title": "Carpet Cleaning Service",
+        "description": "Deep cleaning and stain removal with professional equipment. For carpets of any size and type.",
+        "price": "15,000 UZS/m²",
+        "features": [
+          "Deep cleaning and disinfection",
+          "Professional stain removal",
+          "Free pickup and delivery",
+          "Ready within 24 hours"
+        ]
+      },
+      "curtain": {
+        "title": "Curtain Washing Service",
+        "description": "Delicate curtains are washed and ironed with special care. For curtains made of any fabrics.",
+        "price": "20,000 UZS/m²",
+        "features": [
+          "Special washing for delicate fabrics",
+          "Professional ironing",
+          "Color and shape preservation",
+          "Fast and quality service"
+        ]
+      },
+      "blanket": {
+        "title": "Blanket & Mattress Washing",
+        "description": "Deep cleaning of large blankets and mattresses. Quality service with modern equipment.",
+        "price": "25,000 UZS/pc",
+        "features": [
+          "Special equipment for large items",
+          "Antibacterial cleaning",
+          "Complete drying and disinfection",
+          "Health-safe products"
+        ]
+      },
+      "furniture": {
+        "title": "Furniture Cleaning Service",
+        "description": "Professional cleaning of upholstered furniture and sofas. Deep cleaning with modern technologies.",
+        "price": "30,000 UZS/seat",
+        "features": [
+          "Deep upholstery cleaning",
+          "Stain and odor removal",
+          "At-home service",
+          "Eco-friendly products"
+        ]
+      }
     }
   },
   "features": {
