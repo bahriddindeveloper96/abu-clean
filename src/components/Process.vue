@@ -7,11 +7,7 @@
     </div>
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section Header -->
-      <div class="text-center mb-16 animate-slide-up">
-        <a 
-                  :href="contact.link" 
-                  class="text-primary-600 font-semibold hover:text-primary-700 transition-colors inline-flex items-center space-x-1"
-                >
+      <div class="text-center mb-16 animate-slide-up">        
         <span class="inline-block px-4 py-2 bg-white text-primary-600 rounded-full text-sm font-semibold mb-4 shadow-md">
           {{ $t('process.badge') }}
         </span>
@@ -24,9 +20,7 @@
         <p class="section-subtitle mt-4">
           {{ $t('process.subtitle') }}
         </p>
-        </a>
       </div>
-
       <!-- Process Steps -->
       <div class="relative">
         <!-- Connection Line -->
