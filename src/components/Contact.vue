@@ -195,16 +195,16 @@ const contacts = [
   {
     titleKey: 'footer.email',
     descKey: 'contact.subtitle',
-    value: 'info@abu-clean.uz',
-    link: 'mailto:info@abu-clean.uz',
-    icon: '<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>',
+    value: '@gilam_yuvish_abu_clean',
+    link: 'https://www.instagram.com/gilam_yuvish_abu_clean',
+    icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>',
     color: 'bg-gradient-to-br from-purple-500 to-purple-700'
   },
   {
     titleKey: 'footer.telegram',
     descKey: 'contact.subtitle',
     value: '@abu_clean',
-    link: 'https://t.me/abu_clean',
+    link: 'https://t.me/+998972021996',
     icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>',
     color: 'bg-gradient-to-br from-cyan-500 to-cyan-700'
   }
@@ -223,7 +223,7 @@ const socials = [
   },
   {
     icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>',
-    link: '#',
+    link: 'https://t.me/+998972021996',
     color: 'bg-gradient-to-br from-cyan-500 to-blue-600'
   },
   {
