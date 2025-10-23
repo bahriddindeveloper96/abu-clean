@@ -57,12 +57,12 @@
 
                   <!-- CTA Buttons -->
                   <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s;">
-                    <button @click="$emit('open-modal')" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                    <!-- <button @click="$emit('open-modal')" class="inline-flex items-center bg-white text-primary-600 px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
                       <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                       </svg>
                       <span>{{ $t('common.bookNow') }}</span>
-                    </button>
+                    </button> -->
                     <a href="tel:+998972021996" class="inline-flex items-center bg-primary-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full text-base sm:text-lg lg:text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
                       <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
