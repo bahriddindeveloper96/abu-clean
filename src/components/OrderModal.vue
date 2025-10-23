@@ -26,17 +26,17 @@
 
           <!-- Modal Header -->
           <div class="bg-gradient-to-r from-primary-600 to-blue-600 rounded-t-2xl px-6 py-8 text-center">
-            <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+            <!-- <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
               <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-            </div>
-            <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">
+            </div> -->
+            <!-- <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2">
               {{ $t('modal.title') }}
             </h2>
             <p class="text-white/90 text-sm sm:text-base">
               {{ $t('modal.subtitle') }}
-            </p>
+            </p> -->
           </div>
 
           <!-- Modal Body -->
