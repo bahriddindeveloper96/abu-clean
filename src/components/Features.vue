@@ -39,12 +39,14 @@
           <!-- CTA Button -->
           <div class="mt-8">
             <button class="btn-primary">
+              <a href="tel:+998972021996" target="_blank" rel="noopener noreferrer">
               <span class="flex items-center space-x-2">
                 <span>{{ $t('common.contactUs') }}</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </span>
+              </a>
             </button>
           </div>
         </div>
