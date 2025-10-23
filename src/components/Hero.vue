@@ -82,7 +82,7 @@
           </transition>
 
           <!-- Navigation Arrows -->
-          <!-- <button 
+          <button 
             @click="prevSlide"
             class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 z-20"
           >
@@ -97,10 +97,10 @@
             <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
-          </button> -->
+          </button>
 
           <!-- Dots Indicator -->
-          <div class="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+          <!-- <div class="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
             <button
               v-for="(slide, index) in slides"
               :key="index"
@@ -110,7 +110,7 @@
                 currentSlide === index ? 'bg-white w-8 sm:w-10' : 'bg-white/50 hover:bg-white/75'
               ]"
             ></button>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
