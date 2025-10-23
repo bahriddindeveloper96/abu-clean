@@ -42,7 +42,7 @@
                   </div>
 
                   <!-- Features -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-2xl mx-auto mb-6 animate-slide-up" style="animation-delay: 0.2s;">
+                  <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 max-w-2xl mx-auto mb-6 animate-slide-up" style="animation-delay: 0.2s;">
                     <div 
                       v-for="(feature, index) in $tm(`hero.slides.${slides[currentSlide].key}.features`)"
                       :key="index"
@@ -53,7 +53,7 @@
                       </svg>
                       <span class="font-medium">{{ feature }}</span>
                     </div>
-                  </div>
+                  </div> -->
 
                   <!-- CTA Buttons -->
                   <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay: 0.4s;">
