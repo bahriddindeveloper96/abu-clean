@@ -34,6 +34,12 @@
             :style="{ animationDelay: `${index * 0.1}s` }"
           >
             <!-- Card -->
+             <a 
+              href="tel:+998972021996" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="block"
+            >
             <div class="card p-6 md:p-8 text-center relative overflow-hidden group cursor-pointer transform hover:-translate-y-2 hover:shadow-2xl transition-all duration-500">
               <!-- Background Decoration -->
               <div 
@@ -75,6 +81,7 @@
                 </svg>
               </div>
             </div>
+            </a>
           </div>
         </div>
       </div>
