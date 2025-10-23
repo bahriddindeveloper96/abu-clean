@@ -91,7 +91,7 @@
       </div>
 
       <!-- CTA Section -->
-      <div class="mt-16 text-center animate-slide-up">
+      <!-- <div class="mt-16 text-center animate-slide-up">
         <p class="text-lg text-gray-600 mb-6">{{ $t('contact.subtitle') }}</p>
         <button class="btn-primary transform hover:scale-105 transition-all duration-300">
           <span class="flex items-center space-x-2">
@@ -101,7 +101,7 @@
             </svg>
           </span>
         </button>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

@@ -81,7 +81,7 @@
       </div>
 
       <!-- CTA Section -->
-      <div class="mt-12 md:mt-16 text-center animate-slide-up">
+      <!-- <div class="mt-12 md:mt-16 text-center animate-slide-up">
         <div class="inline-block bg-white rounded-2xl md:rounded-3xl shadow-xl p-6 md:p-8 lg:p-12">
           <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
             {{ $t('process.cta.title') }}
@@ -108,7 +108,7 @@
             </button>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>

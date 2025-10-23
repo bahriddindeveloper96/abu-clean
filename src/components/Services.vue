@@ -6,9 +6,9 @@
     <div class="container mx-auto px-4 relative z-10">
       <!-- Section Header -->
       <div class="text-center mb-16 animate-slide-up">
-        <span class="inline-block px-4 py-2 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
+        <!-- <span class="inline-block px-4 py-2 bg-primary-100 text-primary-600 rounded-full text-sm font-semibold mb-4">
           {{ $t('services.title') }}
-        </span>
+        </span> -->
         <h2 class="section-title">
           {{ $t('services.title') }}
         </h2>
@@ -80,7 +80,7 @@
       </div>
 
       <!-- CTA Banner -->
-      <div class="mt-16 md:mt-20 bg-gray-50 rounded-lg p-8 md:p-12 text-center animate-slide-up">
+      <!-- <div class="mt-16 md:mt-20 bg-gray-50 rounded-lg p-8 md:p-12 text-center animate-slide-up">
         <div class="max-w-2xl mx-auto">
           <div class="inline-block mb-4">
             <span class="px-4 py-2 bg-primary-100 text-primary-600 rounded-md text-sm font-medium">🎉 {{ $t('hero.getStarted') }}</span>
@@ -100,7 +100,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
