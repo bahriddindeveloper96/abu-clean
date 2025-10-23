@@ -193,7 +193,7 @@ const contacts = [
     color: 'bg-gradient-to-br from-blue-500 to-blue-700'
   },
   {
-    titleKey: 'footer.email',
+    titleKey: 'footer.instagram',
     descKey: 'contact.subtitle',
     value: '@gilam_yuvish_abu_clean',
     link: 'https://www.instagram.com/gilam_yuvish_abu_clean',
