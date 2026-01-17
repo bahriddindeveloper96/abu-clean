@@ -17,7 +17,7 @@
             />
           </div>
           <span class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
-            ABUCHISKA
+            Abu chiska
           </span>
         </a>
 
