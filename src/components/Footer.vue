@@ -8,12 +8,12 @@
           <div class="flex items-center space-x-2">
             <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
               <img 
-                src="/src/assets/logo.jpg" 
+                src="/src/assets/logo.png" 
                 alt="Abu Clean Logo" 
                 class="w-full h-full object-cover"
               />
             </div>
-            <span class="text-xl md:text-2xl font-bold">Abu Clean</span>
+            <span class="text-xl md:text-2xl font-bold">Abu chiska</span>
           </div>
           <p class="text-sm md:text-base text-gray-400 leading-relaxed">
             {{ $t('footer.description') }}
@@ -79,7 +79,7 @@
               <div>
                 <div class="text-sm text-gray-400">{{ $t('footer.phone') }}</div>
                 <a href="tel:+998972021996" class="text-white hover:text-primary-400 transition-colors">
-                  +998 97 202 19 96
+                  +998 90 076 19 96
                 </a>
               </div>
             </li>
@@ -92,7 +92,7 @@
               <div>
                 <div class="text-sm text-gray-400">{{ $t('footer.email') }}</div>
                 <a href="mailto:info@abu-clean.uz" class="text-white hover:text-primary-400 transition-colors">
-                  info@abu-clean.uz
+                  info@abuchiska.uz
                 </a>
               </div>
             </li>
@@ -118,7 +118,7 @@
       <div class="container mx-auto px-4 py-6">
         <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p class="text-gray-400 text-xs md:text-sm text-center md:text-left">
-            &copy; {{ currentYear }} Abu Clean. {{ $t('footer.rights') }}
+            &copy; {{ currentYear }} Abu chiska. {{ $t('footer.rights') }}
           </p>
           <div class="flex items-center space-x-6">
             <a href="#" class="text-gray-400 hover:text-primary-400 text-xs md:text-sm transition-colors">
@@ -136,7 +136,7 @@
     <div class="fixed bottom-8 right-8 flex flex-col gap-4 z-40">
       <!-- Telegram Button -->
       <a
-        href="https://t.me/+998972021996"
+        href="https://t.me/+998900761996"
         target="_blank"
         class="group relative w-16 h-16 bg-gradient-to-br from-[#0088cc] via-[#229ED9] to-[#54A9EB] hover:from-[#54A9EB] hover:via-[#229ED9] hover:to-[#0088cc] text-white rounded-3xl shadow-2xl flex items-center justify-center transform hover:scale-125 hover:rotate-[360deg] transition-all duration-700 animate-float"
         style="animation-delay: 0s;"
@@ -161,7 +161,7 @@
 
       <!-- Phone Button -->
       <a
-        href="tel:+998972021996"
+        href="tel:+998900761996"
         class="group relative w-16 h-16 bg-gradient-to-br from-green-400 via-green-500 to-green-600 hover:from-green-600 hover:via-green-500 hover:to-green-400 text-white rounded-3xl shadow-2xl flex items-center justify-center transform hover:scale-125 hover:-rotate-[360deg] transition-all duration-700 animate-float"
         style="animation-delay: 0.3s;"
       >
@@ -202,7 +202,7 @@ const socials = [
   },
   {
     icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/></svg>',
-    link: 'https://t.me/+998972021996'
+    link: 'https://t.me/+998900761996'
   },
   {
     icon: '<svg fill="currentColor" viewBox="0 0 24 24"><path d="M16.7 14.5c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0c-.3-.2-1.2-.5-2.2-1.7-.8-.9-1.3-1.9-1.5-2.2s0-.5.2-.7c.2-.2.5-.5.6-.7.2-.2.2-.4.3-.6s0-.3 0-.5-.7-1.8-1-2.5c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.3 2.2 3.4 5.2 4.8 2.5 1.1 3.5 1.2 4.7 1 1-.1 1.8-.8 2-1.5.2-.7.2-1.3.1-1.5 0-.3-.2-.4-.5-.6zM12 2a10 10 0 00-8.6 15l-1.1 4.1 4.2-1.1A10 10 0 1012 2zm0 18a8 8 0 01-4.3-1.3l-.3-.2-2.5.6.6-2.5-.2-.3A8 8 0 1112 20z"/></svg>',

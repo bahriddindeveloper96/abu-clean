@@ -37,13 +37,13 @@
         <div class="hidden lg:flex items-center space-x-4">
           <LanguageSwitcher />
           <a 
-            href="tel:+998972021996" 
+            href="tel:+998900761996" 
             class="flex items-center space-x-2 text-sm xl:text-base font-semibold text-primary-600 transition-colors duration-300"
           >
             <svg class="w-4 h-4 xl:w-5 xl:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
             </svg>
-            <span>+998 97 202 19 96</span>
+            <span>+998 90 076 19 96</span>
           </a>
           <button @click="$emit('open-modal')" class="px-6 xl:px-8 py-3 xl:py-4 bg-primary-600 text-white text-sm xl:text-base font-semibold rounded-lg hover:bg-primary-700 transition-all duration-300">
             {{ $t('nav.getQuote') }}
@@ -90,7 +90,7 @@
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span>+998 97 202 19 96</span>
+              <span>+998 90 076 19 96</span>
             </a>
             <button @click="$emit('open-modal')" class="btn-primary w-full">
               {{ $t('nav.getQuote') }}
