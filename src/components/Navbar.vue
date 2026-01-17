@@ -11,13 +11,13 @@
         <a href="#" class="flex items-center space-x-3 group">
           <div class="w-12 h-12 md:w-14 md:h-14 rounded-xl overflow-hidden transform group-hover:scale-110 transition-transform duration-300 shadow-lg">
             <img 
-              src="/src/assets/logo.jpg" 
+              src="/src/assets/logo.png" 
               alt="Abu Clean Logo" 
               class="w-full h-full object-cover"
             />
           </div>
           <span class="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors duration-300">
-            Abu Clean
+            Abu Chiska
           </span>
         </a>
 
