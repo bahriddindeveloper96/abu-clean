@@ -23,6 +23,7 @@ export default async function handler(req, res) {
 👤 Ism: ${name}
 📞 Telefon: ${phone}
 🛠 Xizmat: ${service || 'Not specified'}
+💬 Xabar: ${message || 'Bo\'sh'}
   `
 
   try {
