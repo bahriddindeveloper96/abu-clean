@@ -1,6 +1,6 @@
 {
-  "name": "Abu Clean - Professional Gilam Yuvish",
-  "short_name": "Abu Clean",
+  "name": "Abu chiska - Professional Gilam Yuvish",
+  "short_name": "Abu chiska",
   "description": "Professional gilam yuvish va tozalash xizmatlari",
   "start_url": "/",
   "display": "standalone",
@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/vite.svg",
+      "src": "/vite.ico",
       "sizes": "192x192",
       "type": "image/svg+xml",
       "purpose": "any maskable"
     },
     {
-      "src": "/vite.svg",
+      "src": "/vite.ico",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"
