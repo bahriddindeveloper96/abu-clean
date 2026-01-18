@@ -81,7 +81,8 @@
             v-for="item in menuItems" 
             :key="item.key"
             :href="item.href" 
-            class="block px-6 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-300"
+            @click.prevent="handleMenuItemClick(item.href)"
+            class="block px-6 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors duration-300 cursor-pointer"
           >
             {{ $t(item.key) }}
           </a>
@@ -105,12 +106,30 @@
 <script setup>
 import LanguageSwitcher from './LanguageSwitcher.vue'
 
-defineProps({
+const props = defineProps({
   isScrolled: Boolean,
   isMobileMenuOpen: Boolean
 })
 
-defineEmits(['toggle-menu', 'open-modal'])
+const emit = defineEmits(['toggle-menu', 'open-modal'])
+
+const handleMenuItemClick = (href) => {
+  // Close the mobile menu when a menu item is clicked
+  if (props.isMobileMenuOpen) {
+    emit('toggle-menu')
+  }
+  
+  // Scroll to the section after a small delay to allow the menu to close
+  setTimeout(() => {
+    const targetId = href.replace('#', '')
+    const targetElement = document.getElementById(targetId)
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      window.location.href = href
+    }
+  }, 100)
+}
 
 const menuItems = [
   { key: 'nav.home', href: '#home' },
