@@ -67,7 +67,7 @@ const dropdown = ref(null)
 
 const languages = [
   { code: 'uz', name: 'Uzbek', nativeName: "O'zbekcha", flag: '🇺🇿' },
-  { code: 'en', name: 'English', nativeName: 'English', flag: '🇬🇧' },
+  { code: 'en', name: 'English', nativeName: 'English', flag: 'en' },
   { code: 'ru', name: 'Russian', nativeName: 'Русский', flag: '🇷🇺' }
 ]
 
