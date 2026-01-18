@@ -126,29 +126,26 @@
           </div>
 
           <!-- Map Card -->
-          <div class="card p-4 md:p-6">
-            <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">{{ $t('footer.address') }}</h4>
-            
-            <div class="aspect-video bg-gray-200 rounded-xl overflow-hidden mb-4">
-              <div class="w-full h-full bg-gradient-to-br from-primary-200 to-accent-200 flex items-center justify-center">
-                <svg class="w-16 h-16 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+            <div class="card p-4 md:p-6">
+              <h4 class="text-base md:text-lg font-bold text-gray-900 mb-4">{{ $t('footer.address') }}</h4>
+              
+              <div class="aspect-video bg-gray-200 rounded-xl overflow-hidden mb-4">
+                <!-- Yandex Map iframe -->
+                <iframe 
+                  src="https://yandex.uz/map-widget/v1/?ll=69.2775%2C41.3113&z=13&source=constructor" 
+                  width="100%" 
+                  height="100%" 
+                  frameborder="0" 
+                  allowfullscreen 
+                  class="rounded-xl"
+                ></iframe>
               </div>
+
+              <p class="text-sm md:text-base text-gray-600">
+                Toshkent, Yunusobod tumani
+              </p>
             </div>
 
-            <!-- Manzil havolasi -->
-            <p class="text-sm md:text-base text-gray-600">
-              <a 
-                href="https://yandex.uz/maps/10335/tashkent/stops/4070373145/?ll=69.292179%2C41.366777&tab=overview&utm_source=share&z=13" 
-                target="_blank" 
-                class="text-primary-600 hover:underline"
-              >
-                Toshkent, Yakkasaroy tumani, Manzil
-              </a>
-            </p>
-          </div>
 
 
           <!-- Social Media -->
