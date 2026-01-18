@@ -5,7 +5,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ message: 'Method not allowed' })
   }
 
-  const { name, phone, service } = req.body
+  const { name, phone, service, message } = req.body  // <- message qo'shildi
 
   if (!name || !phone) {
     return res.status(400).json({ message: 'Name and phone are required' })
@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ message: 'Telegram bot token or chat ID not set' })
   }
 
-  const message = `
+  const telegramMessage = `
 📩 Yangi so'rov:
 👤 Ism: ${name}
 📞 Telefon: ${phone}
@@ -31,7 +31,7 @@ export default async function handler(req, res) {
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
       {
         chat_id: TELEGRAM_CHAT_ID,
-        text: message,
+        text: telegramMessage,
         parse_mode: 'HTML'
       }
     )
