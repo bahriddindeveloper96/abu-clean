@@ -69,6 +69,7 @@
                     id="phone"
                     v-model="formData.phone"
                     type="tel"
+                    pattern="\+998\d{9}"
                     required
                     class="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
                     placeholder="+998 __ ___ __ __"
